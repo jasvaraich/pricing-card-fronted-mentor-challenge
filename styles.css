@@ -18,9 +18,8 @@ p {
 
 .card {
   background-color: aquamarine;
-  height: 400px;
-  width: 700px;
-  margin: 30px auto 50px;
+  width: 80%;
+  margin: 50px;
   box-shadow: 11px 7px 42px -7px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   overflow: hidden;
@@ -50,15 +49,16 @@ p {
 .bottom-section {
   width: 100%;
   height: 60%;
-  display: flex;
   color: white;
 }
 
 .bottom-left-section {
-  width: 50%;
-  background-color: hsl(179, 62%, 43%);
+  width: 100%;
+  display: inline-block;
   height: 100%;
-  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+  padding: 25px;
+  vertical-align: top;
 }
 
 .bottom-left-section h4 {
@@ -90,10 +90,11 @@ p {
 }
 
 .bottom-right-section {
-  width: 50%;
+  width: 100%;
   background-color: #43c4c1;
   height: 100%;
   padding: 30px;
+  display: inline-block;
 }
 
 .bottom-right-section h4 {
@@ -120,4 +121,23 @@ button:hover {
   background-color: #a9c42d;
   cursor: pointer;
   transform: scale(0.99);
+}
+
+/* 576px and 992px */
+@media (min-width: 576px) {
+  .card {
+    height: 400px;
+    width: 700px;
+  }
+  .bottom-left-section,
+  .bottom-right-section {
+    width: 50%;
+    display: inline-block;
+  }
+  .bottom-right-section {
+    position: relative;
+    top: -100%;
+    left: 50%;
+    overflow: hidden;
+  }
 }
