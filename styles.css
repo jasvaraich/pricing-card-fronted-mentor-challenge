@@ -50,15 +50,15 @@ p {
   width: 100%;
   height: 60%;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .bottom-left-section {
-  width: 100%;
-  display: inline-block;
   height: 100%;
   background-color: hsl(179, 62%, 43%);
   padding: 25px;
-  vertical-align: top;
+  flex-basis: 50%;
 }
 
 .bottom-left-section h4 {
@@ -76,6 +76,7 @@ p {
 .price-container {
   color: hsl(204, 43%, 93%);
   display: flex;
+  align-items: center;
 }
 
 .price {
@@ -84,17 +85,16 @@ p {
 }
 
 .price-frequency {
-  padding: 10px;
   font-size: 0.8rem;
   opacity: 0.7;
+  margin-left: 10px;
 }
 
 .bottom-right-section {
-  width: 100%;
   background-color: #43c4c1;
   height: 100%;
   padding: 30px;
-  display: inline-block;
+  flex-basis: 50%;
 }
 
 .bottom-right-section h4 {
@@ -129,15 +129,8 @@ button:hover {
     height: 400px;
     width: 700px;
   }
-  .bottom-left-section,
-  .bottom-right-section {
-    width: 50%;
-    display: inline-block;
-  }
-  .bottom-right-section {
-    position: relative;
-    top: -100%;
-    left: 50%;
-    overflow: hidden;
+  .bottom-section {
+    display: flex;
+    flex-direction: row;
   }
 }
