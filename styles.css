@@ -18,8 +18,8 @@ p {
 
 .card {
   background-color: aquamarine;
-  width: 80%;
-  margin: 50px;
+  width: auto;
+  margin: 40px;
   box-shadow: 11px 7px 42px -7px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   overflow: hidden;
@@ -127,7 +127,7 @@ button:hover {
 @media (min-width: 576px) {
   .card {
     height: 400px;
-    width: 700px;
+    width: 650px;
   }
   .bottom-section {
     display: flex;
